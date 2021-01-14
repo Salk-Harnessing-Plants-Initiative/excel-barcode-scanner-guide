@@ -1,5 +1,10 @@
 # Excel Barcode Scanner Guide
-Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row.
+Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse.
+
+# Steps
+1. Obtain a barcode or QR code scanner which can be configured to add a custom suffix upon a scan. A lot of scanners have this functionality for carriage returns (`Enter`), but in our case we need it to be able to have `Tab` as the suffix. We happened to go with this scanner: https://www.amazon.com/REALINN-Wireless-Rechargeable-Automatic-Warehouse/dp/B07W5Q48M5/
+
+# Credit
 Credit for the original solution goes to [steveingmc on Reddit](https://www.reddit.com/r/excel/comments/2p1xuf/locating_a_cell_or_item_using_a_bar_code_scanner/cmsxri4?utm_source=share&utm_medium=web2x&context=3):
 
 > To start off we did do a a small bit of VBA to search the excel sheet once the Barcode had scanned, 
