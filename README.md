@@ -20,7 +20,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to find a
 
 <img src="./images/b.png" height="600">
 
-*Sidenote: The formula `=VLOOKUP (value, table, col_index, [range_lookup])` is for searching a table for a value and giving the value of a designated column from the found row. `value` is the input to search for, `table` is the area to search in, `col_index` is the column to give back, and `[range_lookup]` must be `FALSE` to require the search to be exact rather than approximate. Refer to the [VLOOPKUP tutorial](https://exceljet.net/excel-functions/excel-vlookup-function) for more information.* ***Notably, I put `5` for `col_index` because my `local_id` is the fifth column, and `table` should just be the entirety of `main`.***
+*Sidenote: The formula `=VLOOKUP (value, table, col_index, [range_lookup])` is for searching a table for a value and giving the value of a designated column from the found row. `value` is the input to search for, `table` is the area to search in, `col_index` is the column to give back, and `[range_lookup]` must be `FALSE` to require the search to be exact rather than approximate. Refer to the [VLOOPKUP tutorial](https://exceljet.net/excel-functions/excel-vlookup-function) for more information.* ***Notably, I put `5` for `col_index` because my `local_id` is the fifth column, and `table` should just be the entirety of `main`.*** *(Use `$` to hold the table fixed`).*
 
 <img src="./images/c.png" height="400">
 
