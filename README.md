@@ -1,9 +1,7 @@
 # Excel Barcode Scanner Guide
-Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse.
+Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse. You can [download](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/raw/main/example_spreadsheet.xlsx) `example_spreadsheet.xlsx` for the Excel document used in the steps below.
 
 # Steps
-*You can [download](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/raw/main/example_spreadsheet.xlsx) `example_spreadsheet.xlsx` for the Excel document used in the steps below.*
-
 
 1. Obtain a barcode or QR code scanner which can be configured to add a custom suffix upon a scan. A lot of scanners have this functionality for carriage returns (`Enter`), but in our case we need it to be able to have `Tab` as the suffix. 
     1. We happened to go with this scanner: https://www.amazon.com/REALINN-Wireless-Rechargeable-Automatic-Warehouse/dp/B07W5Q48M5/. Refer to Page 16 of the [manual](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/raw/main/RL6200W%20Manual%20V1.0.pdf) (`RL6200W Manual V1.0.pdf`) to configure the scanner to give `Tab` instead of carriage return and the end of each scan.
