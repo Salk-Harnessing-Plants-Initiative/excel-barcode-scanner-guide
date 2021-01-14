@@ -4,6 +4,10 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to find a
 # Steps
 1. Obtain a barcode or QR code scanner which can be configured to add a custom suffix upon a scan. A lot of scanners have this functionality for carriage returns (`Enter`), but in our case we need it to be able to have `Tab` as the suffix. 
     1. We happened to go with this scanner: https://www.amazon.com/REALINN-Wireless-Rechargeable-Automatic-Warehouse/dp/B07W5Q48M5/. Refer to Page 16 of the [manual](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/blob/main/RL6200W%20Manual%20V1.0.pdf) to configure the scanner to give `Tab` instead of carriage return and the end of each scan.
+    
+1. `example_spreadsheet.xlsx`. `main` `day5` `=VLOOKUP(A2,main!$1:$1048576, 5, FALSE)` `=VLOOKUP (value, table, col_index, [range_lookup])` [documentation for VLOOPKUP](https://exceljet.net/excel-functions/excel-vlookup-function) for more information.
+
+`=VLOOKUP(A2, 'day5'!$1:$1048576, 2, FALSE)`
 
 # Credit
 Credit for the original solution goes to [steveingmc on Reddit](https://www.reddit.com/r/excel/comments/2p1xuf/locating_a_cell_or_item_using_a_bar_code_scanner/cmsxri4?utm_source=share&utm_medium=web2x&context=3):
