@@ -48,7 +48,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to match 
 <img src="./images/j.png" height="600"> 
 
 # Searching for an individual row one-off
-If you just need to find a particular row in `main`, you can `Ctrl-F` and scan the barcode. Barcode scanners behave like keyboards!
+If you just need to find a particular row in `main`, you can `Ctrl-F` and scan the barcode. Barcode scanners behave as keyboards!
 
 # Credit
 Credit for the original solution goes to [steveingmc on Reddit](https://www.reddit.com/r/excel/comments/2p1xuf/locating_a_cell_or_item_using_a_bar_code_scanner/cmsxri4?utm_source=share&utm_medium=web2x&context=3):
