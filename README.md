@@ -5,7 +5,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to find a
 1. Obtain a barcode or QR code scanner which can be configured to add a custom suffix upon a scan. A lot of scanners have this functionality for carriage returns (`Enter`), but in our case we need it to be able to have `Tab` as the suffix. 
     1. We happened to go with this scanner: https://www.amazon.com/REALINN-Wireless-Rechargeable-Automatic-Warehouse/dp/B07W5Q48M5/. Refer to Page 16 of the [manual](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/blob/main/RL6200W%20Manual%20V1.0.pdf) (`RL6200W Manual V1.0.pdf`) to configure the scanner to give `Tab` instead of carriage return and the end of each scan.
     
-2. Open your Excel spreadsheet, and move your identifying column (barcode) to being the first column. (In our lab, this is `container_id` when we're scanning container labels, like when there's only one plant per container. Alternatively, this is `plant_id` when we're scanning plant labels, like when there's multiple plants per container and the label is directly on eac plant). For this example, I'm named my main sheet `main`, and you can do the same if it makes the next steps easier.
+2. Open your Excel spreadsheet, and move your identifying column (barcode) to being the first column. (In our lab, this is `container_id` when we're scanning container labels, like when there's only one plant per container. Alternatively, this is `plant_id` when we're scanning plant labels, like when there's multiple plants per container and the label is directly on each plant). For this example, I'm named my main sheet `main`, and you can do the same if it makes the next steps easier.
 
 <img src="./images/a.png" height="600">
 
