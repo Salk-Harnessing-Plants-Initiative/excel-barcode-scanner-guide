@@ -36,7 +36,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to match 
 
 8. Type your input value, press enter to jump to the next row, then repeat.
 
-<img src="./images/g.png" height="600">
+<img src="./images/g.png" height="500">
 
 9. Select your barcode column and set `Conditional Formatting` to prevent the risk of duplicate scans.
 
