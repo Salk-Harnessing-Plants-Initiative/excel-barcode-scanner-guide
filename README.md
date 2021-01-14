@@ -1,5 +1,5 @@
-# Excel Barcode Scanner
-Excel VBA script that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row.
+# Excel Barcode Scanner Guide
+Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row.
 Credit for the original idea on how to write the solution goes to [steveingmc on Reddit](https://www.reddit.com/r/excel/comments/2p1xuf/locating_a_cell_or_item_using_a_bar_code_scanner/cmsxri4?utm_source=share&utm_medium=web2x&context=3):
 
 > To start off we did do a a small bit of VBA to search the excel sheet once the Barcode had scanned, 
