@@ -2,6 +2,9 @@
 Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse.
 
 # Steps
+*You can download `example_spreadsheet.xlsx` for the Excel document used in the steps below.*
+
+
 1. Obtain a barcode or QR code scanner which can be configured to add a custom suffix upon a scan. A lot of scanners have this functionality for carriage returns (`Enter`), but in our case we need it to be able to have `Tab` as the suffix. 
     1. We happened to go with this scanner: https://www.amazon.com/REALINN-Wireless-Rechargeable-Automatic-Warehouse/dp/B07W5Q48M5/. Refer to Page 16 of the [manual](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/blob/main/RL6200W%20Manual%20V1.0.pdf) (`RL6200W Manual V1.0.pdf`) to configure the scanner to give `Tab` instead of carriage return and the end of each scan.
     
@@ -45,8 +48,6 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to find a
 10. Finally, connect the data back to your `main` sheet by adding a column there and using `VLOOKUP` of your data input sheet: `=VLOOKUP(A2, 'day5'!$1:$1048576, 2, FALSE)`. You can refer to this to also check which of your plants are still missing values (since they show `#N/A`).
 
 <img src="./images/j.png" height="600"> 
-
-You can download `example_spreadsheet.xlsx` for the Excel document used in the steps below.
 
 # Credit
 Credit for the original solution goes to [steveingmc on Reddit](https://www.reddit.com/r/excel/comments/2p1xuf/locating_a_cell_or_item_using_a_bar_code_scanner/cmsxri4?utm_source=share&utm_medium=web2x&context=3):
