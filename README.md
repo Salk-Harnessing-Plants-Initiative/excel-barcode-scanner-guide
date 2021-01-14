@@ -1,5 +1,5 @@
 # Excel Barcode Scanner Guide
-Excel technique that allows you to quickly scan a barcode (or QR code) to find a row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse. You can [download](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/raw/main/example_spreadsheet.xlsx) `example_spreadsheet.xlsx` for the Excel document used in the steps below.
+Excel technique that allows you to quickly scan a barcode (or QR code) to match a preexisting row and manually input a value associated with that row. In our lab we are using this to scan plants and record measurements while in the greenhouse. You can [download](https://github.com/Salk-Harnessing-Plants-Initiative/excel-barcode-scanner-guide/raw/main/example_spreadsheet.xlsx) `example_spreadsheet.xlsx` for the Excel document used in the steps below.
 
 # Steps
 
