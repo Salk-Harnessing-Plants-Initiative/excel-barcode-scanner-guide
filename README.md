@@ -8,23 +8,23 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to match 
     
 2. Open your Excel spreadsheet, and move your identifying (barcode) column to being the first column. (In our lab, this is `container_id` when we're scanning container labels, like when there's only one plant per container. Alternatively, this is `plant_id` when we're scanning plant labels, like when there's multiple plants per container and the label is directly on each plant). For this example, I'm named my main sheet `main`, and you can do the same if it makes the next steps easier.
 
-<img src="./images/a.png" height="600">
+<img src="./images/a.png" height="800">
 
 3. Add a new blank sheet, which we will use to input data while working with the barcode scanner. Here I've named it `day5`. The first column will be used for barcode scans, and the second column will be for the new data you're trying to record manually alongside scanning. E.g., `container_id` and `height_cm_day5`. 
 
-<img src="./images/k.png" height="600">
+<img src="./images/k.png" height="800">
 
 4. For quality control / sanity checking, add an additional column that will be used to reference another column in your `main` sheet. In this example, I go with `local_id`, since that's the column that will show me that the barcodes being scanned have been successfully found in `main`, and that when I scan it's the correct plant that I'm physically looking at. In that column you should use the formula `=VLOOKUP(A2,main!$1:$1048576, 5, FALSE)`.
 
-<img src="./images/b.png" height="600">
+<img src="./images/b.png" height="800">
 
 *Sidenote: The formula `=VLOOKUP (value, table, col_index, [range_lookup])` is for searching a table for a value and giving the value of a designated column from the found row. `value` is the input to search for, `table` is the area to search in, `col_index` is the column to give back, and `[range_lookup]` must be `FALSE` to require the search to be exact rather than approximate. Refer to the [VLOOPKUP tutorial](https://exceljet.net/excel-functions/excel-vlookup-function) for more information.* ***Notably, I put `5` for `col_index` because my `local_id` is the fifth column, and `table` should just be the entirety of `main`.*** *(Use `$` to hold the table fixed).*
 
-<img src="./images/c.png" height="400">
+<img src="./images/c.png" height="600">
 
 5. Now, use the formula dynamically for the whole column (drag it down).
 
-<img src="./images/d.png" height="600">
+<img src="./images/d.png" height="800">
 
 6. Select the first empty cell of the barcode column.
 
@@ -45,7 +45,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to match 
 
 10. Finally, connect the data back to your `main` sheet by adding a column there and using `VLOOKUP` of your data input sheet: `=VLOOKUP(A2, 'day5'!$1:$1048576, 2, FALSE)`. You can refer to this to also check which of your plants are still missing values (since they show `#N/A`).
 
-<img src="./images/j.png" height="600"> 
+<img src="./images/j.png" height="800"> 
 
 # Searching for an individual row one-off
 If you just need to find a particular row in `main`, you can `Ctrl-F` and scan the barcode. Barcode scanners behave as keyboards!
