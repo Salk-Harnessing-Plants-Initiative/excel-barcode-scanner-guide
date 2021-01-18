@@ -45,7 +45,7 @@ Excel technique that allows you to quickly scan a barcode (or QR code) to match 
 
 10. Finally, connect the data back to your `main` sheet by adding a column there and using `VLOOKUP` of your data input sheet: `=VLOOKUP(A2, 'day5'!$1:$1048576, 2, FALSE)`. You can refer to this to also check which of your plants are still missing values (since they show `#N/A`).
 
-<img src="./images/j.png" height="800"> 
+<img src="./images/j.png" height="600"> 
 
 # Searching for an individual row one-off
 If you just need to find a particular row in `main`, you can `Ctrl-F` and scan the barcode. Barcode scanners behave as keyboards!
